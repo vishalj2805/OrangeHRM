@@ -1,9 +1,11 @@
 package base;
 
+import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import utilities.Logs;
+
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -14,11 +16,13 @@ public class ElementsAction {
 
     WebDriver driver;
     Properties properties;
+    Logger log;
 
 
     public ElementsAction(WebDriver driver, Properties properties) throws IOException {
         this.driver = driver;
         this.properties = properties;
+        log = new Logs().getLogger();
     }
 
     public By identifyElementType(String element) {
@@ -55,12 +59,14 @@ public class ElementsAction {
 
     public void writeText(String element, String text){
         driver.findElement(identifyElementType(element)).sendKeys(text);
+        log.info("Entered Text: "+ text + "in " + element);
 
 
     }
 
     public void click(String element){
         driver.findElement(identifyElementType(element)).click();
+        log.info("Clicked on " + element);
     }
 
 

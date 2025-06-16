@@ -1,0 +1,12 @@
+2025-06-16 12:31:34 [main] INFO  utilities.Logs - Browser Opened
+2025-06-16 12:31:55 [main] INFO  utilities.Logs - Navigated to: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2025-06-16 12:32:06 [main] INFO  utilities.Logs - Entered Text: Adminin username_xpath
+2025-06-16 12:32:06 [main] INFO  utilities.Logs - Entered Text: admin123in password_xpath
+2025-06-16 12:32:11 [main] INFO  utilities.Logs - Clicked on loginBtn_xpath
+2025-06-16 12:32:11 [main] INFO  utilities.Logs - Browser Closed
+2025-06-16 12:32:13 [main] INFO  utilities.Logs - Browser Opened
+2025-06-16 12:32:35 [main] INFO  utilities.Logs - Navigated to: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2025-06-16 12:32:46 [main] INFO  utilities.Logs - Entered Text: vishaljin username_xpath
+2025-06-16 12:32:46 [main] INFO  utilities.Logs - Entered Text: 2805in password_xpath
+2025-06-16 12:32:51 [main] INFO  utilities.Logs - Clicked on loginBtn_xpath
+2025-06-16 12:32:52 [main] INFO  utilities.Logs - Browser Closed

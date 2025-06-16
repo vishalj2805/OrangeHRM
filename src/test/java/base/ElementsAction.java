@@ -1,24 +1,24 @@
 package base;
 
-import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import utilities.Logs;
 
 import java.io.IOException;
 import java.util.Properties;
 
-import static base.DriverClass.driver;
 import static base.DriverClass.log;
 
 
 public class ElementsAction {
 
+    WebDriver driver;
     Properties properties;
 
 
     public ElementsAction(WebDriver driver, Properties properties) throws IOException {
+        this.driver = driver;
         this.properties = properties;
+
     }
 
     public By identifyElementType(String element) {

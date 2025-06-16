@@ -1,6 +1,6 @@
 2025-06-16 21:04:10 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
 2025-06-16 21:04:10 [main] DEBUG - Parsing relationship: /_rels/.rels
-2025-06-16 21:04:10 [main] INFO  - ********* tests.Login Started *********
+2025-06-16 21:04:10 [main] INFO  - ********* tests.ValidLogin Started *********
 2025-06-16 21:04:12 [main] INFO  - Browser Opened
 2025-06-16 21:04:15 [main] INFO  - Navigated to: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 2025-06-16 21:04:16 [main] INFO  - Entered Text: Admin in username_xpath
@@ -8,8 +8,8 @@
 2025-06-16 21:04:17 [main] INFO  - Clicked on loginBtn_xpath
 2025-06-16 21:04:17 [main] DEBUG - Page Title is: https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index
 2025-06-16 21:04:17 [main] INFO  - Browser Closed
-2025-06-16 21:04:17 [main] INFO  - ********* tests.Login Ended *********
-2025-06-16 21:04:17 [main] INFO  - ********* tests.Login Started *********
+2025-06-16 21:04:17 [main] INFO  - ********* tests.ValidLogin Ended *********
+2025-06-16 21:04:17 [main] INFO  - ********* tests.ValidLogin Started *********
 2025-06-16 21:04:19 [main] INFO  - Browser Opened
 2025-06-16 21:04:22 [main] INFO  - Navigated to: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 2025-06-16 21:04:23 [main] INFO  - Entered Text: vishalj in username_xpath
@@ -18,4 +18,4 @@
 2025-06-16 21:04:25 [main] DEBUG - Page Title is: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 2025-06-16 21:04:25 [main] ERROR - Assertion failed: Expected = https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index, Actual = https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 2025-06-16 21:04:25 [main] INFO  - Browser Closed
-2025-06-16 21:04:25 [main] INFO  - ********* tests.Login Ended *********
+2025-06-16 21:04:25 [main] INFO  - ********* tests.ValidLogin Ended *********

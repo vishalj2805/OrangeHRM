@@ -1,0 +1,12 @@
+2025-06-16 22:56:16 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-06-16 22:56:16 [main] DEBUG - Parsing relationship: /_rels/.rels
+2025-06-16 22:56:46 [main] INFO  - ********* tests.InvalidLogin Started *********
+2025-06-16 22:56:48 [main] INFO  - Browser Opened
+2025-06-16 22:56:51 [main] INFO  - Navigated to: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2025-06-16 22:56:52 [main] INFO  - Entered Text: Username in username_xpath
+2025-06-16 22:56:52 [main] INFO  - Entered Text: Password in password_xpath
+2025-06-16 22:56:54 [main] INFO  - Clicked on loginBtn_xpath
+2025-06-16 22:56:54 [main] INFO  - Url is: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2025-06-16 22:56:54 [main] ERROR - Assertion Failed: Expected = https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index, Actual = https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2025-06-16 22:56:55 [main] INFO  - Browser Closed
+2025-06-16 22:56:55 [main] INFO  - ********* tests.InvalidLogin Ended *********

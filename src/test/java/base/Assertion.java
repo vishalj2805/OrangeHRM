@@ -1,6 +1,5 @@
 package base;
 
-import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 
 import static base.DriverClass.log;

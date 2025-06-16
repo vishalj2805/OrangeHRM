@@ -3,7 +3,6 @@ package base;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -13,12 +12,11 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.time.Duration;
-import java.util.Arrays;
 import java.util.Properties;
 
 public class DriverClass {
 
-    public static WebDriver driver;
+    public WebDriver driver;
     public static final Logger log = new Logs().getLogger();
 
 

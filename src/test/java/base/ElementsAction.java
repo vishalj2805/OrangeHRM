@@ -1,28 +1,24 @@
 package base;
 
-import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import utilities.Logs;
 
-
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.Properties;
+
+import static base.DriverClass.driver;
+import static base.DriverClass.log;
+
 
 public class ElementsAction {
 
-    WebDriver driver;
     Properties properties;
-    Logger log;
 
 
     public ElementsAction(WebDriver driver, Properties properties) throws IOException {
-        this.driver = driver;
         this.properties = properties;
-        log = new Logs().getLogger();
     }
 
     public By identifyElementType(String element) {
@@ -56,10 +52,9 @@ public class ElementsAction {
 
     }
 
-
     public void writeText(String element, String text){
         driver.findElement(identifyElementType(element)).sendKeys(text);
-        log.info("Entered Text: "+ text + "in " + element);
+        log.info("Entered Text: "+ text + " in " + element);
 
 
     }
@@ -68,6 +63,8 @@ public class ElementsAction {
         driver.findElement(identifyElementType(element)).click();
         log.info("Clicked on " + element);
     }
+
+
 
 
 

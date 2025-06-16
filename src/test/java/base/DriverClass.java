@@ -13,24 +13,30 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.time.Duration;
+import java.util.Arrays;
 import java.util.Properties;
 
 public class DriverClass {
 
-    public WebDriver driver;
-    Logger log = new Logs().getLogger();;
+    public static WebDriver driver;
+    public static final Logger log = new Logs().getLogger();
+
 
     @BeforeMethod
     public void setUp() throws IOException {
+        log.info("********* " + this.getClass().getName() + " Started *********");
         WebDriverManager.firefoxdriver().setup();
         driver = new FirefoxDriver();
+        log.info("Browser Opened");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 
         Properties properties = new Properties();
         FileInputStream fileInputStream = new FileInputStream("../OrangeHRM/src/test/java/properties/data.properties");
         properties.load(new InputStreamReader(fileInputStream));
-        log.info("Browser Opened");
+
+
+
         driver.get(properties.getProperty("baseUrl"));
         log.info("Navigated to: " + properties.getProperty("baseUrl"));
 
@@ -40,6 +46,7 @@ public class DriverClass {
     public void tearDown(){
         driver.quit();
         log.info("Browser Closed");
+        log.info("********* " + this.getClass().getName() + " Ended *********");
     }
 
 

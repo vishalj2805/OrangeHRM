@@ -11,7 +11,6 @@ import java.io.InputStreamReader;
 import java.util.Properties;
 
 public class LandingPage extends ElementsAction {
-    public static FileInputStream fis;
 
 
     public LandingPage(WebDriver driver) throws IOException {
@@ -20,7 +19,7 @@ public class LandingPage extends ElementsAction {
     }
 
     private static Properties loadProperty() throws IOException {
-        fis = new FileInputStream("../OrangeHRM/src/test/java/properties/landingPage.properties");
+        FileInputStream fis = new FileInputStream("../OrangeHRM/src/test/java/properties/landingPage.properties");
         Properties properties = new Properties();
         properties.load(new InputStreamReader(fis));
         return properties;

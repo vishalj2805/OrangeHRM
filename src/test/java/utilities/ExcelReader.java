@@ -31,7 +31,6 @@ public class ExcelReader {
             }
         }
 
-        System.out.println(data);
         return data;
 
     }

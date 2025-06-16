@@ -3,6 +3,7 @@ package base;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -18,13 +19,13 @@ public class DriverClass {
 
     @BeforeMethod
     public void setUp() throws IOException {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+        WebDriverManager.firefoxdriver().setup();
+        driver = new FirefoxDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 
         Properties properties = new Properties();
-        FileInputStream fileInputStream = new FileInputStream("..\\OrangeHRM\\src\\test\\java\\properties\\data.properties");
+        FileInputStream fileInputStream = new FileInputStream("../OrangeHRM/src/test/java/properties/data.properties");
         properties.load(new InputStreamReader(fileInputStream));
 
         driver.get(properties.getProperty("baseUrl"));

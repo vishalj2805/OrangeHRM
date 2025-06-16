@@ -15,7 +15,7 @@ public class ExcelReader {
 
     public Object[][] readExcelFile(String sheetName) throws IOException {
 
-        FileInputStream fileInputStream = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\java\\utilities\\testdata.xlsx");
+        FileInputStream fileInputStream = new FileInputStream(System.getProperty("user.dir")+"/src/test/java/utilities/testdata.xlsx");
         XSSFWorkbook workbook = new XSSFWorkbook(fileInputStream);
         XSSFSheet sheet = workbook.getSheet(sheetName);
         int rows = sheet.getPhysicalNumberOfRows()-1;

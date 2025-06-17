@@ -28,6 +28,7 @@ public class InvalidLogin extends DriverClass {
         LandingPage landingPage = new LandingPage(driver);
 
         landingPage.login(username, password);
-        Assertion.assertEquals(UtilitiesMethods.getURL(driver), "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index");
+
+        Assertion.assertEquals(landingPage.getLoginErrorMessage(), "Invalid credentials");
     }
 }

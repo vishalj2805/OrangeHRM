@@ -30,6 +30,11 @@ public class LandingPage extends ElementsAction {
         click("loginBtn_xpath");
     }
 
+    public String getLoginErrorMessage(){
+        return getText("invalidLogin_xpath");
+    }
+
+
 
 
 

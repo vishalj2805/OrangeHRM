@@ -54,16 +54,21 @@ public class ElementsAction {
 
     public void writeText(String element, String text){
         driver.findElement(identifyElementType(element)).sendKeys(text);
-        log.info("Entered Text: "+ text + " in " + element);
+        log.debug("Entered Text: "+ text + " in " + element);
 
 
     }
 
     public void click(String element){
         driver.findElement(identifyElementType(element)).click();
-        log.info("Clicked on " + element);
+        log.debug("Clicked on " + element);
     }
 
+    public String getText(String element){
+        String text = driver.findElement(identifyElementType(element)).getText();
+        log.debug("Fetched Text from element: {}", element);
+        return text;
+    }
 
 
 

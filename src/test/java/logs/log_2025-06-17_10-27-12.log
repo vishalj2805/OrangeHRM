@@ -1,0 +1,26 @@
+2025-06-17 10:27:12 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-06-17 10:27:12 [main] DEBUG - Parsing relationship: /_rels/.rels
+2025-06-17 10:27:12 [main] INFO  - ********* tests.InvalidLogin Started *********
+2025-06-17 10:27:14 [main] INFO  - Browser Opened
+2025-06-17 10:27:17 [main] INFO  - Navigated to: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2025-06-17 10:27:18 [main] DEBUG - Entered Text: vishalj in username_xpath
+2025-06-17 10:27:18 [main] DEBUG - Entered Text: vishalj2805 in password_xpath
+2025-06-17 10:27:19 [main] DEBUG - Clicked on loginBtn_xpath
+2025-06-17 10:27:19 [main] DEBUG - Fetched Text from element: invalidLogin_xpath
+2025-06-17 10:27:19 [main] ERROR - Assertion Failed: Expected = Invalid credentials, Actual = Invalid credentials
+Username : Admin
+Password : admin123
+2025-06-17 10:27:20 [main] INFO  - Browser Closed
+2025-06-17 10:27:20 [main] INFO  - ********* tests.InvalidLogin Ended *********
+2025-06-17 10:27:20 [main] INFO  - ********* tests.InvalidLogin Started *********
+2025-06-17 10:27:21 [main] INFO  - Browser Opened
+2025-06-17 10:27:25 [main] INFO  - Navigated to: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2025-06-17 10:27:25 [main] DEBUG - Entered Text: vsj in username_xpath
+2025-06-17 10:27:25 [main] DEBUG - Entered Text: vsj2805 in password_xpath
+2025-06-17 10:27:27 [main] DEBUG - Clicked on loginBtn_xpath
+2025-06-17 10:27:27 [main] DEBUG - Fetched Text from element: invalidLogin_xpath
+2025-06-17 10:27:27 [main] ERROR - Assertion Failed: Expected = Invalid credentials, Actual = Invalid credentials
+Username : Admin
+Password : admin123
+2025-06-17 10:27:28 [main] INFO  - Browser Closed
+2025-06-17 10:27:28 [main] INFO  - ********* tests.InvalidLogin Ended *********

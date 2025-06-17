@@ -62,7 +62,7 @@ public class ExcelReader {
         Object[][] data = new Object[rows][columns];
 
         for (int i=0;i<rows;i++){
-            XSSFRow row = sheet.getRow(i+1);
+            XSSFRow row = sheet.getRow(sectorDataStartRow+i);
             for (int j=0;j<columns;j++){
                 XSSFCell cell = row.getCell(j);
                 data[i][j] = cell.getStringCellValue();

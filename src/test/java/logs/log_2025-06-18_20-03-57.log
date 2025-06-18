@@ -1,0 +1,10 @@
+2025-06-18 20:03:57 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-06-18 20:03:57 [main] DEBUG - Parsing relationship: /_rels/.rels
+2025-06-18 20:03:57 [main] INFO  - ********* tests.ValidLogin Started *********
+2025-06-18 20:03:59 [main] INFO  - Browser Opened
+2025-06-18 20:04:02 [main] INFO  - Navigated to: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2025-06-18 20:04:03 [main] DEBUG - Entered Text: Admin in username_xpath
+2025-06-18 20:04:03 [main] DEBUG - Entered Text: admin123 in password_xpath
+2025-06-18 20:04:04 [main] DEBUG - Clicked on loginBtn_xpath
+2025-06-18 20:04:04 [main] INFO  - Url is: https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index
+2025-06-18 20:04:04 [main] INFO  - Assertion Passed: Expected = https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index, Actual = https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index

@@ -25,7 +25,7 @@ public class InvalidLogin extends DriverClass {
 
     @Test(dataProvider = "data")
     public void invalidLogin(String username, String password) throws IOException {
-        LandingPage landingPage = new LandingPage(driver);
+        LandingPage landingPage = new LandingPage(driver.get());
 
         landingPage.login(username, password);
 

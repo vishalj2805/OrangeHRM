@@ -25,9 +25,9 @@ public class ValidLogin extends DriverClass {
 
     @Test(dataProvider = "data")
     public void validLogin(String username, String password) throws InterruptedException, IOException {
-        LandingPage landingPage = new LandingPage(driver);
+        LandingPage landingPage = new LandingPage(driver.get());
 
         landingPage.login(username, password);
-        Assertion.assertEquals(UtilitiesMethods.getURL(driver), "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index");
+        Assertion.assertEquals(UtilitiesMethods.getURL(driver.get()), "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index");
     }
 }

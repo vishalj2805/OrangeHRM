@@ -1,5 +1,8 @@
 package base;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -9,6 +12,7 @@ import org.testng.annotations.BeforeMethod;
 import utilities.Logs;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.time.Duration;
@@ -17,7 +21,8 @@ import java.util.Properties;
 public class DriverClass {
 
     public static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
-    public static final Logger log = new Logs().getLogger();
+    public static Logs log = new Logs();
+    Properties properties = new Properties();
 
 
     @BeforeMethod
@@ -28,13 +33,8 @@ public class DriverClass {
         log.info("Browser Opened");
         driver.get().manage().window().maximize();
         driver.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-
-        Properties properties = new Properties();
         FileInputStream fileInputStream = new FileInputStream("../OrangeHRM/src/test/java/properties/data.properties");
         properties.load(new InputStreamReader(fileInputStream));
-
-
-
         driver.get().get(properties.getProperty("baseUrl"));
         log.info("Navigated to: " + properties.getProperty("baseUrl"));
 

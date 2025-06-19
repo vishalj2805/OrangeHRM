@@ -1,0 +1,22 @@
+2025-06-19 14:38:31 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-06-19 14:38:31 [main] DEBUG - Parsing relationship: /_rels/.rels
+2025-06-19 14:38:32 [main] INFO  - ********* tests.ValidLogin Started *********
+2025-06-19 14:38:37 [main] INFO  - Browser Opened
+2025-06-19 14:38:44 [main] INFO  - Navigated to: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2025-06-19 14:38:44 [main] INFO  - Entered Text: Admin in username_xpath
+2025-06-19 14:38:44 [main] INFO  - Entered Text: admin123 in password_xpath
+2025-06-19 14:38:47 [main] INFO  - Clicked on loginBtn_xpath
+2025-06-19 14:38:47 [main] INFO  - Url is: https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index
+2025-06-19 14:38:47 [main] INFO  - Assertion Passed: Expected = https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index Actual = https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index
+2025-06-19 14:38:52 [main] INFO  - Browser Closed
+2025-06-19 14:38:52 [main] INFO  - ********* tests.ValidLogin Ended *********
+2025-06-19 14:38:52 [main] INFO  - ********* tests.ValidLogin Started *********
+2025-06-19 14:38:53 [main] INFO  - Browser Opened
+2025-06-19 14:38:59 [main] INFO  - Navigated to: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2025-06-19 14:38:59 [main] INFO  - Entered Text: vj2805 in username_xpath
+2025-06-19 14:38:59 [main] INFO  - Entered Text: vishalj28051 in password_xpath
+2025-06-19 14:39:00 [main] INFO  - Clicked on loginBtn_xpath
+2025-06-19 14:39:00 [main] INFO  - Url is: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2025-06-19 14:39:00 [main] INFO  - Assertion Failed: Expected = https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index Actual = https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2025-06-19 14:39:06 [main] INFO  - Browser Closed
+2025-06-19 14:39:06 [main] INFO  - ********* tests.ValidLogin Ended *********

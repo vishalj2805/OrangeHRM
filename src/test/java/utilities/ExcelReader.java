@@ -10,8 +10,6 @@ import java.io.IOException;
 
 public class ExcelReader {
 
-
-
     public Object[][] readExcelFile(String sheetName) throws IOException {
 
         FileInputStream fileInputStream = new FileInputStream(System.getProperty("user.dir")+"/src/test/java/utilities/testdata.xlsx");

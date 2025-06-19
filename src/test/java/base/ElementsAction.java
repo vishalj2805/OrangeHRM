@@ -66,7 +66,7 @@ public class ElementsAction {
 
     public String getText(String element){
         String text = driver.findElement(identifyElementType(element)).getText();
-        log.debug("Fetched Text from element: {}", element);
+        log.debug("Fetched Text from element: " + element);
         return text;
     }
 

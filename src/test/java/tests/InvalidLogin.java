@@ -2,7 +2,6 @@ package tests;
 
 import base.Assertion;
 import base.DriverClass;
-import base.UtilitiesMethods;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pageObjects.LandingPage;

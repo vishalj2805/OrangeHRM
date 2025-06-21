@@ -2,9 +2,15 @@ package base;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.IOException;
+import java.time.Duration;
+import java.util.ArrayList;
 import java.util.Properties;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 import static base.DriverClass.log;
 
@@ -13,20 +19,20 @@ public class ElementsAction {
 
     WebDriver driver;
     Properties properties;
+    public static WebDriverWait wait;
 
 
     public ElementsAction(WebDriver driver, Properties properties) throws IOException {
         this.driver = driver;
         this.properties = properties;
-
+        wait = new WebDriverWait(driver, Duration.ofSeconds(15));
     }
 
     public By identifyElementType(String element) {
 
 
         switch (element.split("_")[1]){
-            case "xpath":
-                return By.xpath(properties.getProperty(element));
+            case "xpath": return By.xpath(properties.getProperty(element));
 
             case "css":return By.cssSelector(properties.getProperty(element));
 
@@ -69,6 +75,25 @@ public class ElementsAction {
         log.debug("Fetched Text from element: " + element);
         return text;
     }
+
+
+    public String getURL(){
+        String url = driver.getCurrentUrl();
+        log.info("Url is: "+ url);
+        return url;
+    }
+
+    public ArrayList<String> getTextDataFromElements(String element){
+        ArrayList<String> textData = driver.findElements(identifyElementType(element))
+                .stream().map(WebElement::getText).collect(Collectors.toCollection(ArrayList::new));
+        return textData;
+    }
+
+
+
+
+
+
 
 
 

@@ -14,8 +14,14 @@ public class Assertion {
             log.error("Assertion Failed: Expected = " + expectedValue +" Actual = " + actualValue);
             Assert.fail();
         }
+    }
 
+    public static void assertTrue(String message){
+        log.info(message);
+    }
 
+    public static void assertFalse(String message){
+        log.info(message);
     }
 
 

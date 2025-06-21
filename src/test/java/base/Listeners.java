@@ -11,7 +11,6 @@ public class Listeners extends DriverClass implements ITestListener {
     ScreenShot screenShot = new ScreenShot();
 
 
-
     @Override
     public void onTestSuccess(ITestResult result) {
         ITestListener.super.onTestSuccess(result);

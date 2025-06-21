@@ -1,0 +1,12 @@
+2025-06-21 18:17:13 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-06-21 18:17:13 [main] DEBUG - Parsing relationship: /_rels/.rels
+2025-06-21 18:17:13 [main] INFO  - ********* tests.VerifyMenuItems Started *********
+2025-06-21 18:17:15 [main] INFO  - Browser Opened
+2025-06-21 18:17:18 [main] INFO  - Navigated to: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2025-06-21 18:17:19 [main] INFO  - Entered Text: Admin in username_xpath
+2025-06-21 18:17:19 [main] INFO  - Entered Text: admin123 in password_xpath
+2025-06-21 18:17:20 [main] INFO  - Clicked on loginBtn_xpath
+2025-06-21 18:17:20 [main] INFO  - Actual List of Menu Items: [Admin, PIM, Leave, Time, Recruitment, My Info, Performance, Dashboard, Directory, Maintenance, Claim, Buzz]
+2025-06-21 18:17:20 [main] INFO  - List of Menu Items Displayed: [Admin, PIM, Leave, Time, Recruitment, My Info, Performance, Dashboard, Directory, Maintenance, Claim, Buzz]
+2025-06-21 18:17:20 [main] INFO  - All the Items in Menu are Displayed correctly
+2025-06-21 18:17:21 [main] INFO  - Browser Closed

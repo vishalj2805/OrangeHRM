@@ -4,7 +4,6 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
@@ -27,6 +26,7 @@ public class DriverClass {
 
     @BeforeMethod
     public void setUp() throws IOException {
+        log.startTest(this.getClass().getName());
         log.info("********* " + this.getClass().getName() + " Started *********");
         WebDriverManager.firefoxdriver().setup();
         driver.set(new FirefoxDriver());
@@ -44,7 +44,7 @@ public class DriverClass {
     public void tearDown(){
         driver.get().quit();
         log.info("Browser Closed");
-        log.info("********* " + this.getClass().getName() + " Ended *********");
+        log.getExtentReports().flush();
     }
 
 }

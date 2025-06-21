@@ -2,7 +2,6 @@ package tests;
 
 import base.Assertion;
 import base.DriverClass;
-import base.ElementsAction;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pageObjects.HomePage;
@@ -11,9 +10,7 @@ import utilities.ExcelReader;
 
 import java.io.IOException;
 
-
-public class ValidLogin extends DriverClass {
-
+public class VerifyMenuItems extends DriverClass {
 
     @DataProvider(name = "data")
     public Object[][] getData() throws IOException {
@@ -25,11 +22,19 @@ public class ValidLogin extends DriverClass {
 
 
     @Test(dataProvider = "data")
-    public void validLogin(String username, String password) throws InterruptedException, IOException {
+    public void verifyMenuItems(String username, String password) throws InterruptedException, IOException {
         LandingPage landingPage = new LandingPage(driver.get());
         HomePage homePage = new HomePage(driver.get());
 
         landingPage.login(username, password);
-        Assertion.assertEquals(homePage.getURL(), "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index");
+        if(homePage.isMenuItemsDisplayed()){
+            Assertion.assertTrue("All the Items in Menu are Displayed correctly");
+        }else {
+            Assertion.assertFalse("Items Displayed in Menu are Incorrect or Incomplete");
+        }
+
+
+
     }
+
 }

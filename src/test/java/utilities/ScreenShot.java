@@ -13,9 +13,6 @@ import java.util.Date;
 public class ScreenShot extends DriverClass {
 
     public void takeScreenShot(Boolean isSuccess, String testName) throws InterruptedException {
-
-
-
         String status = isSuccess ? "Passed" : "Failed";
         String timestamp = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss").format(new Date());
         File srcFile = ((TakesScreenshot)driver.get()).getScreenshotAs(OutputType.FILE);

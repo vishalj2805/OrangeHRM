@@ -6,16 +6,9 @@
     </listeners>
     <test verbose="2" preserve-order="true" name="/Users/vishalj/IdeaProjects/OrangeHRM">
         <classes>
-            <class name="tests.InvalidLogin">
-                <methods>
-                    <include name="invalidLogin"/>
-                </methods>
-            </class>
-            <class name="tests.ValidLogin">
-                <methods>
-                    <include name="validLogin"/>
-                </methods>
-            </class>
+            <class name="tests.InvalidLogin"/>
+            <class name="tests.ValidLogin"/>
+            <class name="tests.VerifyMenuItems"/>
         </classes>
     </test>
 </suite>

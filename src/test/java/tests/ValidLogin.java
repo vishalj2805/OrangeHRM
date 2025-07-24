@@ -29,6 +29,11 @@ public class ValidLogin extends DriverClass {
         HomePage homePage = new HomePage(driver.get());
 
         landingPage.login(username, password);
-        Assertion.assertEquals(homePage.getURL(), "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index");
+        if (homePage.isDashboardHeadingDisplayed()){
+            Assertion.assertEquals(homePage.getURL(), "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index");
+        }else {
+            Assertion.assertFalse("Failed: Not on Home Page. Dashboard Heading not Displayed");
+        }
+
     }
 }

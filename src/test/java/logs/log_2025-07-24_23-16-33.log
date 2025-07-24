@@ -1,0 +1,44 @@
+2025-07-24 23:16:34 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-07-24 23:16:34 [main] DEBUG - Parsing relationship: /_rels/.rels
+2025-07-24 23:16:34 [main] INFO  - ********* tests.InvalidLogin Started *********
+2025-07-24 23:16:35 [main] INFO  - Browser Opened
+2025-07-24 23:16:37 [main] INFO  - Navigated to: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2025-07-24 23:16:38 [main] INFO  - Entered Text: vishalj in username_xpath
+2025-07-24 23:16:38 [main] INFO  - Entered Text: vishalj2805 in password_xpath
+2025-07-24 23:16:38 [main] INFO  - Clicked on loginBtn_xpath
+2025-07-24 23:16:39 [main] INFO  - Fetched Text from element: invalidLogin_xpath
+2025-07-24 23:16:39 [main] INFO  - Assertion Passed: Expected = Invalid credentials Actual = Invalid credentials
+2025-07-24 23:16:40 [main] INFO  - Browser Closed
+2025-07-24 23:16:40 [main] INFO  - ********* tests.InvalidLogin Started *********
+2025-07-24 23:16:40 [main] INFO  - Browser Opened
+2025-07-24 23:16:43 [main] INFO  - Navigated to: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2025-07-24 23:16:44 [main] INFO  - Entered Text: vsj in username_xpath
+2025-07-24 23:16:44 [main] INFO  - Entered Text: vsj2805 in password_xpath
+2025-07-24 23:16:44 [main] INFO  - Clicked on loginBtn_xpath
+2025-07-24 23:16:45 [main] INFO  - Fetched Text from element: invalidLogin_xpath
+2025-07-24 23:16:45 [main] INFO  - Assertion Passed: Expected = Invalid credentials Actual = Invalid credentials
+2025-07-24 23:16:45 [main] INFO  - Browser Closed
+2025-07-24 23:16:45 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-07-24 23:16:45 [main] DEBUG - Parsing relationship: /_rels/.rels
+2025-07-24 23:16:45 [main] INFO  - ********* tests.ValidLogin Started *********
+2025-07-24 23:16:46 [main] INFO  - Browser Opened
+2025-07-24 23:16:48 [main] INFO  - Navigated to: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2025-07-24 23:16:48 [main] INFO  - Entered Text: Admin in username_xpath
+2025-07-24 23:16:48 [main] INFO  - Entered Text: admin123 in password_xpath
+2025-07-24 23:16:49 [main] INFO  - Clicked on loginBtn_xpath
+2025-07-24 23:16:50 [main] INFO  - Url is: https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index
+2025-07-24 23:16:50 [main] INFO  - Assertion Passed: Expected = https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index Actual = https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index
+2025-07-24 23:16:50 [main] INFO  - Browser Closed
+2025-07-24 23:16:50 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-07-24 23:16:50 [main] DEBUG - Parsing relationship: /_rels/.rels
+2025-07-24 23:16:50 [main] INFO  - ********* tests.VerifyMenuItems Started *********
+2025-07-24 23:16:51 [main] INFO  - Browser Opened
+2025-07-24 23:16:53 [main] INFO  - Navigated to: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2025-07-24 23:16:54 [main] INFO  - Entered Text: Admin in username_xpath
+2025-07-24 23:16:54 [main] INFO  - Entered Text: admin123 in password_xpath
+2025-07-24 23:16:54 [main] INFO  - Clicked on loginBtn_xpath
+2025-07-24 23:16:55 [main] INFO  - On Home Page
+2025-07-24 23:16:55 [main] INFO  - Actual List of Menu Items: [Admin, PIM, Leave, Time, Recruitment, My Info, Performance, Dashboard, Directory, Maintenance, Claim, Buzz]
+2025-07-24 23:16:55 [main] INFO  - List of Menu Items Displayed: [Admin, PIM, Leave, Time, Recruitment, My Info, Performance, Dashboard, Directory, Maintenance, Claim, Buzz]
+2025-07-24 23:16:55 [main] INFO  - All the Items in Menu are Displayed correctly
+2025-07-24 23:16:56 [main] INFO  - Browser Closed

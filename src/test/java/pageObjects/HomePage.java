@@ -32,6 +32,12 @@ public class HomePage extends ElementsAction {
         List<String> expectedMenuItems = new ArrayList<>(Arrays.asList("Admin", "PIM", "Leave", "Time", "Recruitment", "My Info", "Performance", "Dashboard", "Directory",
                 "Maintenance", "Claim", "Buzz"));
 
+        if(isDashboardHeadingDisplayed()){
+            log.info("On Home Page");
+        }else {
+            log.error("Not on Home Page");
+        }
+
         List<String> actualMenuItems= getTextDataFromElements("menuItems_xpath");
 
         int actualMenuItemCounter = 0;
@@ -49,12 +55,13 @@ public class HomePage extends ElementsAction {
         }else {
             return false;
         }
-
-
-
-
-
     }
+
+    public Boolean isDashboardHeadingDisplayed(){
+        return isElementVisible("dashboardHeading_tag");
+    }
+
+
 
 
 

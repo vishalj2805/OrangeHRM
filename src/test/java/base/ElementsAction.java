@@ -3,6 +3,8 @@ package base;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.IOException;
@@ -85,7 +87,21 @@ public class ElementsAction {
     public ArrayList<String> getTextDataFromElements(String element){
         ArrayList<String> textData = driver.findElements(identifyElementType(element))
                 .stream().map(WebElement::getText).collect(Collectors.toCollection(ArrayList::new));
+        log.info("Extracted Data From Element: " + element);
         return textData;
+    }
+
+
+    public Boolean isElementVisible(String element){
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(identifyElementType(element))));
+        if (driver.findElement(identifyElementType(element)).isDisplayed()){
+            log.info("Element: "+element + " is Visible");
+            return true;
+        }else {
+            log.error("Element: "+element + " is Not Visible");
+            return false;
+        }
+
     }
 
 

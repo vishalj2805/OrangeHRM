@@ -1,15 +1,18 @@
 package base;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import utilities.ScreenShot;
 
 import java.io.IOException;
 import java.time.Duration;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Properties;
 import java.util.stream.Collectors;
 
@@ -21,12 +24,16 @@ public class ElementsAction {
     WebDriver driver;
     Properties properties;
     public static WebDriverWait wait;
+    public JavascriptExecutor javascriptExecutor;
+    public ScreenShot screenShot;
 
 
     public ElementsAction(WebDriver driver, Properties properties) throws IOException {
         this.driver = driver;
         this.properties = properties;
         wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        this.javascriptExecutor = (JavascriptExecutor) driver;
+        this.screenShot = new ScreenShot();
     }
 
     public By identifyElementType(String element) {
@@ -84,6 +91,12 @@ public class ElementsAction {
         return url;
     }
 
+    public List<WebElement> getElements(String element){
+        List<WebElement> elements = driver.findElements(identifyElementType(element));
+        log.info("Extracted Total " + elements.size() +  " elements from " + element);
+        return elements;
+    }
+
     public ArrayList<String> getTextDataFromElements(String element){
         ArrayList<String> textData = driver.findElements(identifyElementType(element))
                 .stream().map(WebElement::getText).collect(Collectors.toCollection(ArrayList::new));
@@ -99,6 +112,18 @@ public class ElementsAction {
             return true;
         }else {
             log.error("Element: "+element + " is Not Visible");
+            return false;
+        }
+
+    }
+
+    public Boolean isElementVisible(WebElement element, String elementName){
+        wait.until(ExpectedConditions.visibilityOf(element));
+        if (element.isDisplayed()){
+            log.info("Element is Visible: " + elementName);
+            return true;
+        }else {
+            log.error("Element is Not Visible: " + elementName);
             return false;
         }
 

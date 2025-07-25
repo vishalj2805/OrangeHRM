@@ -1,0 +1,16 @@
+2025-07-25 17:48:27 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-07-25 17:48:27 [main] DEBUG - Parsing relationship: /_rels/.rels
+2025-07-25 17:48:27 [main] INFO  - ********* tests.VerifyWidgets Started *********
+2025-07-25 17:48:28 [main] INFO  - Browser Opened
+2025-07-25 17:48:31 [main] INFO  - Navigated to: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2025-07-25 17:48:33 [main] INFO  - Entered Text: Admin in username_xpath
+2025-07-25 17:48:33 [main] INFO  - Entered Text: admin123 in password_xpath
+2025-07-25 17:48:33 [main] INFO  - Clicked on loginBtn_xpath
+2025-07-25 17:48:35 [main] INFO  - Element: dashboardHeading_tag is Visible
+2025-07-25 17:48:35 [main] INFO  - Logged In Successfully
+2025-07-25 17:48:35 [main] INFO  - Extracted Data From Element: widgets_xpath
+2025-07-25 17:48:35 [main] INFO  - Extracted Total 7 elements from widgets_xpath
+2025-07-25 17:48:35 [main] INFO  - Actual List of Menu Items: [Time at Work, My Actions, Quick Launch, Buzz Latest Posts, Employees on Leave Today, Employee Distribution by Sub Unit, Employee Distribution by Location]
+2025-07-25 17:48:35 [main] INFO  - List of Menu Items Displayed: [Time at Work, My Actions, Quick Launch, Buzz Latest Posts, Employees on Leave Today, Employee Distribution by Sub Unit, Employee Distribution by Location]
+2025-07-25 17:48:35 [main] INFO  - Element is Visible: Time at Work
+2025-07-25 17:48:35 [main] INFO  - Browser Closed

@@ -1,0 +1,23 @@
+2025-07-25 17:33:52 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-07-25 17:33:52 [main] DEBUG - Parsing relationship: /_rels/.rels
+2025-07-25 17:33:53 [main] INFO  - ********* tests.VerifyWidgets Started *********
+2025-07-25 17:33:53 [main] INFO  - Browser Opened
+2025-07-25 17:33:56 [main] INFO  - Navigated to: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2025-07-25 17:33:58 [main] INFO  - Entered Text: Admin in username_xpath
+2025-07-25 17:33:58 [main] INFO  - Entered Text: admin123 in password_xpath
+2025-07-25 17:33:59 [main] INFO  - Clicked on loginBtn_xpath
+2025-07-25 17:34:00 [main] INFO  - Element: dashboardHeading_tag is Visible
+2025-07-25 17:34:00 [main] INFO  - Logged In Successfully
+2025-07-25 17:34:00 [main] INFO  - Extracted Data From Element: widgets_xpath
+2025-07-25 17:34:00 [main] INFO  - Extracted Total 7 elements from widgets_xpath
+2025-07-25 17:34:00 [main] INFO  - Element is Visible: [[ChromeDriver: chrome on linux (a91fb44c7bc8bc89ac5cf7c16b3dcc44)] -> xpath: //div[contains(@class,'grid-3 orangehrm-dashboard')]//div[contains(@class, 'widget-name')]//p]
+2025-07-25 17:34:01 [main] INFO  - Element is Visible: [[ChromeDriver: chrome on linux (a91fb44c7bc8bc89ac5cf7c16b3dcc44)] -> xpath: //div[contains(@class,'grid-3 orangehrm-dashboard')]//div[contains(@class, 'widget-name')]//p]
+2025-07-25 17:34:01 [main] INFO  - Element is Visible: [[ChromeDriver: chrome on linux (a91fb44c7bc8bc89ac5cf7c16b3dcc44)] -> xpath: //div[contains(@class,'grid-3 orangehrm-dashboard')]//div[contains(@class, 'widget-name')]//p]
+2025-07-25 17:34:01 [main] INFO  - Element is Visible: [[ChromeDriver: chrome on linux (a91fb44c7bc8bc89ac5cf7c16b3dcc44)] -> xpath: //div[contains(@class,'grid-3 orangehrm-dashboard')]//div[contains(@class, 'widget-name')]//p]
+2025-07-25 17:34:01 [main] INFO  - Element is Visible: [[ChromeDriver: chrome on linux (a91fb44c7bc8bc89ac5cf7c16b3dcc44)] -> xpath: //div[contains(@class,'grid-3 orangehrm-dashboard')]//div[contains(@class, 'widget-name')]//p]
+2025-07-25 17:34:01 [main] INFO  - Element is Visible: [[ChromeDriver: chrome on linux (a91fb44c7bc8bc89ac5cf7c16b3dcc44)] -> xpath: //div[contains(@class,'grid-3 orangehrm-dashboard')]//div[contains(@class, 'widget-name')]//p]
+2025-07-25 17:34:01 [main] INFO  - Element is Visible: [[ChromeDriver: chrome on linux (a91fb44c7bc8bc89ac5cf7c16b3dcc44)] -> xpath: //div[contains(@class,'grid-3 orangehrm-dashboard')]//div[contains(@class, 'widget-name')]//p]
+2025-07-25 17:34:01 [main] INFO  - Actual List of Menu Items: [Time at Work, My Actions, Quick Launch, Buzz Latest Posts, Employees on Leave Today, Employee Distribution by Sub Unit, Employee Distribution by Location]
+2025-07-25 17:34:01 [main] INFO  - List of Menu Items Displayed: [Time at Work, My Actions, Quick Launch, Buzz Latest Posts, Employees on Leave Today, Employee Distribution by Sub Unit, Employee Distribution by Location]
+2025-07-25 17:34:01 [main] INFO  - All the Widgets in Homepage are Displayed correctly
+2025-07-25 17:34:01 [main] INFO  - Browser Closed

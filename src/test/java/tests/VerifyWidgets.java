@@ -10,9 +10,7 @@ import utilities.ExcelReader;
 
 import java.io.IOException;
 
-
-public class ValidLogin extends DriverClass {
-
+public class VerifyWidgets extends DriverClass {
 
     @DataProvider(name = "data")
     public Object[][] getData() throws IOException {
@@ -24,16 +22,21 @@ public class ValidLogin extends DriverClass {
 
 
     @Test(dataProvider = "data")
-    public void validLogin(String username, String password) throws InterruptedException, IOException {
+    public void verifyMenuItems(String username, String password) throws InterruptedException, IOException {
         LandingPage landingPage = new LandingPage(driver.get());
         HomePage homePage = new HomePage(driver.get());
 
         landingPage.login(username, password);
-        if (homePage.loginSuccessStatus()){
-            Assertion.assertEquals(homePage.getURL(), "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index");
+        homePage.loginSuccessStatus();
+
+        if(homePage.isWidgetsDisplayed()){
+            Assertion.assertTrue("All the Widgets in Homepage are Displayed correctly");
         }else {
-            Assertion.assertFalse("Failed: Not on Home Page. Dashboard Heading not Displayed");
+            Assertion.assertFalse("Widgets Displayed in Homepage are Incorrect or Incomplete");
         }
 
+
+
     }
+
 }

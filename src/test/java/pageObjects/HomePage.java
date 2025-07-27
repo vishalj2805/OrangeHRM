@@ -75,13 +75,12 @@ public class HomePage extends ElementsAction {
         log.info("Actual List of Menu Items: " + expectedWidgets);
         log.info("List of Menu Items Displayed: " + actualWidgets);
 
+        screenShot.takeScreenShot("Widgets Screenshot 1");
+        javascriptExecutor.executeScript("arguments[0].scrollIntoView(true);", widgetsElements.getLast());
+        screenShot.takeScreenShot("Widgets Screenshot 2");
+
         int actualWidgetsCounter = 0;
         for (int i=0;i<actualWidgets.size();i++) {
-
-            isElementVisible(widgetsElements.get(i), actualWidgets.get(i));
-            javascriptExecutor.executeScript("arguments[0].scrollIntoView(true);", actualWidgets.get(i));
-            screenShot.takeScreenShot("Widgets Screenshot");
-
             if (expectedWidgets.contains(actualWidgets.get(i))){
                 actualWidgetsCounter++;
             }

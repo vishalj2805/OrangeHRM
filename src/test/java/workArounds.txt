@@ -1,0 +1,1 @@
+"test" variable passed in Logs object while declaring in DriverClass

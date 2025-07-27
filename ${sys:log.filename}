@@ -60,3 +60,68 @@
 2025-06-20 15:12:59 [main] INFO  - Url is: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 2025-06-20 15:12:59 [main] INFO  - Assertion Failed: Expected = https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index Actual = https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 2025-06-20 15:13:05 [main] INFO  - Browser Closed
+2025-07-27 11:55:04 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-07-27 11:55:04 [main] DEBUG - Parsing relationship: /_rels/.rels
+2025-07-27 11:55:05 [main] INFO  - ********* tests.VerifyWidgets Started *********
+2025-07-27 11:57:46 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-07-27 11:57:46 [main] DEBUG - Parsing relationship: /_rels/.rels
+2025-07-27 11:57:47 [main] INFO  - ********* tests.VerifyWidgets Started *********
+2025-07-27 11:57:47 [main] INFO  - Browser Opened
+2025-07-27 11:57:50 [main] INFO  - Navigated to: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2025-07-27 11:57:51 [main] INFO  - Entered Text: Admin in username_xpath
+2025-07-27 11:57:51 [main] INFO  - Entered Text: admin123 in password_xpath
+2025-07-27 11:57:51 [main] INFO  - Clicked on loginBtn_xpath
+2025-07-27 11:57:52 [main] INFO  - Element: dashboardHeading_tag is Visible
+2025-07-27 11:57:52 [main] INFO  - Logged In Successfully
+2025-07-27 11:57:52 [main] INFO  - Extracted Data From Element: widgets_xpath
+2025-07-27 11:57:52 [main] INFO  - Extracted Total 7 elements from widgets_xpath
+2025-07-27 11:57:52 [main] INFO  - Actual List of Menu Items: [Time at Work, My Actions, Quick Launch, Buzz Latest Posts, Employees on Leave Today, Employee Distribution by Sub Unit, Employee Distribution by Location]
+2025-07-27 11:57:52 [main] INFO  - List of Menu Items Displayed: [Time at Work, My Actions, Quick Launch, Buzz Latest Posts, Employees on Leave Today, Employee Distribution by Sub Unit, Employee Distribution by Location]
+2025-07-27 11:57:53 [main] INFO  - All the Widgets in Homepage are Displayed correctly
+2025-07-27 11:58:29 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-07-27 11:58:29 [main] DEBUG - Parsing relationship: /_rels/.rels
+2025-07-27 11:58:29 [main] INFO  - ********* tests.VerifyWidgets Started *********
+2025-07-27 11:58:30 [main] INFO  - Browser Opened
+2025-07-27 11:58:33 [main] INFO  - Navigated to: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2025-07-27 11:58:33 [main] INFO  - Entered Text: Admin in username_xpath
+2025-07-27 11:58:33 [main] INFO  - Entered Text: admin123 in password_xpath
+2025-07-27 11:58:33 [main] INFO  - Clicked on loginBtn_xpath
+2025-07-27 11:58:35 [main] INFO  - Element: dashboardHeading_tag is Visible
+2025-07-27 11:58:35 [main] INFO  - Logged In Successfully
+2025-07-27 11:58:35 [main] INFO  - Extracted Data From Element: widgets_xpath
+2025-07-27 11:58:35 [main] INFO  - Extracted Total 7 elements from widgets_xpath
+2025-07-27 11:58:35 [main] INFO  - Actual List of Menu Items: [Time at Work, My Actions, Quick Launch, Buzz Latest Posts, Employees on Leave Today, Employee Distribution by Sub Unit, Employee Distribution by Location]
+2025-07-27 11:58:35 [main] INFO  - List of Menu Items Displayed: [Time at Work, My Actions, Quick Launch, Buzz Latest Posts, Employees on Leave Today, Employee Distribution by Sub Unit, Employee Distribution by Location]
+2025-07-27 11:58:35 [main] INFO  - All the Widgets in Homepage are Displayed correctly
+2025-07-27 11:58:35 [main] INFO  - Browser Closed
+2025-07-27 12:02:24 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-07-27 12:02:24 [main] DEBUG - Parsing relationship: /_rels/.rels
+2025-07-27 12:02:24 [main] INFO  - ********* tests.VerifyWidgets Started *********
+2025-07-27 12:02:31 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-07-27 12:02:31 [main] DEBUG - Parsing relationship: /_rels/.rels
+2025-07-27 12:02:31 [main] INFO  - ********* tests.VerifyWidgets Started *********
+2025-07-27 12:02:39 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-07-27 12:02:39 [main] DEBUG - Parsing relationship: /_rels/.rels
+2025-07-27 12:02:39 [main] INFO  - ********* tests.VerifyWidgets Started *********
+2025-07-27 12:05:14 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-07-27 12:05:14 [main] DEBUG - Parsing relationship: /_rels/.rels
+2025-07-27 12:05:14 [main] INFO  - ********* tests.VerifyWidgets Started *********
+2025-07-27 12:06:11 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-07-27 12:06:11 [main] DEBUG - Parsing relationship: /_rels/.rels
+2025-07-27 12:06:11 [main] INFO  - ********* tests.VerifyWidgets Started *********
+2025-07-27 12:07:57 [main] DEBUG - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-07-27 12:07:57 [main] DEBUG - Parsing relationship: /_rels/.rels
+2025-07-27 12:07:58 [main] INFO  - ********* tests.VerifyWidgets Started *********
+2025-07-27 12:07:59 [main] INFO  - Browser Opened
+2025-07-27 12:08:01 [main] INFO  - Navigated to: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2025-07-27 12:08:02 [main] INFO  - Entered Text: Admin in username_xpath
+2025-07-27 12:08:02 [main] INFO  - Entered Text: admin123 in password_xpath
+2025-07-27 12:08:02 [main] INFO  - Clicked on loginBtn_xpath
+2025-07-27 12:08:04 [main] INFO  - Element: dashboardHeading_tag is Visible
+2025-07-27 12:08:04 [main] INFO  - Logged In Successfully
+2025-07-27 12:08:04 [main] INFO  - Extracted Data From Element: widgets_xpath
+2025-07-27 12:08:04 [main] INFO  - Extracted Total 7 elements from widgets_xpath
+2025-07-27 12:08:04 [main] INFO  - Actual List of Menu Items: [Time at Work, My Actions, Quick Launch, Buzz Latest Posts, Employees on Leave Today, Employee Distribution by Sub Unit, Employee Distribution by Location]
+2025-07-27 12:08:04 [main] INFO  - List of Menu Items Displayed: [Time at Work, My Actions, Quick Launch, Buzz Latest Posts, Employees on Leave Today, Employee Distribution by Sub Unit, Employee Distribution by Location]
+2025-07-27 12:08:04 [main] INFO  - All the Widgets in Homepage are Displayed correctly
+2025-07-27 12:08:04 [main] INFO  - Browser Closed

@@ -6,6 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import utilities.ExtentReports;
 import utilities.Logs;
 
 import java.io.FileInputStream;
@@ -17,16 +18,19 @@ import java.util.Properties;
 public class DriverClass {
 
     public static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
-    public static Logs log = new Logs();
+    public static ExtentReports extentReports;
+    public static Logs log;
     Properties properties = new Properties();
-
 
     @BeforeMethod
     public void setUp() throws IOException {
         FileInputStream fileInputStream = new FileInputStream("../OrangeHRM/src/test/java/properties/data.properties");
         properties.load(new InputStreamReader(fileInputStream));
+        extentReports = new ExtentReports();
 
-        log.startTest(this.getClass().getName());
+
+        extentReports.startTest(this.getClass().getName());
+        log = new Logs(extentReports.getTest());
         log.info("********* " + this.getClass().getName() + " Started *********");
         browserSelection(properties.getProperty("browser"));
         log.info("Browser Opened");
@@ -41,7 +45,7 @@ public class DriverClass {
     public void tearDown(){
         driver.get().quit();
         log.info("Browser Closed");
-        log.getExtentReports().flush();
+        extentReports.getExtentReports().flush();
     }
 
 
